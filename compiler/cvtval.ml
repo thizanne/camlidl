@@ -18,6 +18,8 @@ open Idltypes
 open Variables
 open Cvttyp
 
+module Array = IdlArray
+
 (* Allocate space to hold a C value of type [ty], and store a pointer to
    this space in [c].
    If [on_stack] is true, the space is allocated on stack.

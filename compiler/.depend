@@ -1,4 +1,4 @@
-array.cmi: idltypes.cmi prefix.cmi 
+idlArray.cmi: idltypes.cmi prefix.cmi 
 constdecl.cmi: idltypes.cmi 
 cvttyp.cmi: idltypes.cmi 
 cvtval.cmi: idltypes.cmi prefix.cmi 
@@ -22,10 +22,10 @@ typedef.cmi: idltypes.cmi
 uniondecl.cmi: idltypes.cmi 
 union.cmi: idltypes.cmi prefix.cmi 
 variables.cmi: idltypes.cmi 
-array.cmo: cvttyp.cmi idltypes.cmi lexpr.cmi utils.cmi variables.cmi \
-    array.cmi 
-array.cmx: cvttyp.cmx idltypes.cmi lexpr.cmx utils.cmx variables.cmx \
-    array.cmi 
+idlArray.cmo: cvttyp.cmi idltypes.cmi lexpr.cmi utils.cmi variables.cmi \
+    idlArray.cmi 
+idlArray.cmx: cvttyp.cmx idltypes.cmi lexpr.cmx utils.cmx variables.cmx \
+    idlArray.cmi 
 clflags.cmo: config.cmi 
 clflags.cmx: config.cmx 
 config.cmo: config.cmi 
@@ -34,9 +34,9 @@ constdecl.cmo: cvttyp.cmi idltypes.cmi lexpr.cmi utils.cmi constdecl.cmi
 constdecl.cmx: cvttyp.cmx idltypes.cmi lexpr.cmx utils.cmx constdecl.cmi 
 cvttyp.cmo: config.cmi idltypes.cmi lexpr.cmi utils.cmi cvttyp.cmi 
 cvttyp.cmx: config.cmx idltypes.cmi lexpr.cmx utils.cmx cvttyp.cmi 
-cvtval.cmo: array.cmi cvttyp.cmi enum.cmi idltypes.cmi lexpr.cmi struct.cmi \
+cvtval.cmo: idlArray.cmi cvttyp.cmi enum.cmi idltypes.cmi lexpr.cmi struct.cmi \
     union.cmi utils.cmi variables.cmi cvtval.cmi 
-cvtval.cmx: array.cmx cvttyp.cmx enum.cmx idltypes.cmi lexpr.cmx struct.cmx \
+cvtval.cmx: idlArray.cmx cvttyp.cmx enum.cmx idltypes.cmi lexpr.cmx struct.cmx \
     union.cmx utils.cmx variables.cmx cvtval.cmi 
 enumdecl.cmo: cvttyp.cmi cvtval.cmi enum.cmi idltypes.cmi utils.cmi \
     variables.cmi enumdecl.cmi 
